@@ -7,7 +7,47 @@
 </head>
 <body>
     <script>
-        
+        /* Function computerPlay that will randomly return
+        either 'rock' 'paper' or 'scissors'.*/
+
+        //Create global variable for R,P,S output
+        let computerSelection = ' ';
+        //Create variable to store number
+        //Compute random number and store variable
+        //If random number is < 0.333 output rock
+        //If random number is <= 0.333 and < 0.667 output paper
+        //If random number is >= 0.667 output scissors
+        function computerPlay() {
+            computerVar = Math.random();
+            if (computerVar < 0.333) {
+                return 'Rock';
+            } else if (computerVar >= 0.333 && computerVar < 0.666) {
+                return 'Paper';
+            } else {
+                return 'Scissors';
+            }
+        }
+
+        console.log(computerPlay());
+
+        /* Function that plays a single round of rock, paper, scissors
+        with parameters of playerSelection and computerSelection,
+        returns a string that declares the winner of the round: 
+        'You lose! Paper beats Rock!'*/
+
+        //Create global variable to store R,P,S selection
+        //prompt() users for input R,P,S
+        //rock beats scissors
+        //scissors beats paper
+        //paper beats rock
+        //compare computer random selection to user input selection
+
+        /* Function is case insensitive. 'return' the results of the
+        function call */
+
+        /* Write new function game() to play a 5 round game */
+
+        console.log(Math.random());
     </script>
 </body>
 </html>
