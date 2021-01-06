@@ -11,43 +11,91 @@
         either 'rock' 'paper' or 'scissors'.*/
 
         //Create global variable for R,P,S output
-        let computerSelection = ' ';
+        // let computerSelection = ' ';
+        // let playerSelection = ' ';
         //Create variable to store number
         //Compute random number and store variable
         //If random number is < 0.333 output rock
         //If random number is <= 0.333 and < 0.667 output paper
         //If random number is >= 0.667 output scissors
-        function computerPlay() {
-            computerVar = Math.random();
-            if (computerVar < 0.333) {
-                return 'Rock';
-            } else if (computerVar >= 0.333 && computerVar < 0.666) {
-                return 'Paper';
-            } else {
-                return 'Scissors';
-            }
-        }
+        // function computerPlay() {
+        //     computerVar = Math.random();
+        //     if (computerVar < 0.333) {
+        //         return "rock";
+        //     } else if (computerVar >= 0.333 && computerVar < 0.666) {
+        //         return "paper";
+        //     } else {
+        //         return "scissors";
+        //     }
+        // }
 
-        console.log(computerPlay());
-
+       
         /* Function that plays a single round of rock, paper, scissors
         with parameters of playerSelection and computerSelection,
         returns a string that declares the winner of the round: 
         'You lose! Paper beats Rock!'*/
 
         //Create global variable to store R,P,S selection
-        //prompt() users for input R,P,S
+        // function playerPlay() {
+        //     playerSelection = prompt("Please input your selection: Type Rock, Paper, or Scissors").toLowerCase;
+        //     return "playerSelection";
+        // }
+        //prompt() users for input R,P,S 
         //rock beats scissors
         //scissors beats paper
         //paper beats rock
         //compare computer random selection to user input selection
-
+        // function game(computerSelection, playerSelection) {          
+        //     if ("playerSelection" === "rock" && "computerSelection" === "scissors") {
+        //     return "You win this round!";
+        // }   else if ("playerSelection" === "paper" && "computerSelection" === "rock") {
+        //     return "You win this round!";
+        // }   else if ("playerSelection" === "scissors" && "computerSelection" === "paper") {
+        //     return "You win this round!";
+        // }   else
+        //     return "It's a tie!"
+        // }
+    
         /* Function is case insensitive. 'return' the results of the
         function call */
+       
+        // console.log(game(playerPlay(), computerPlay()));
+
 
         /* Write new function game() to play a 5 round game */
 
         console.log(Math.random());
+
+            // let x = 0;
+
+                function game(x, y) {
+                        if (x === 1 && y === 3) {
+                            return "You win this round!";
+                        } else if (x === 2 && y === 1) {
+                            return "You win this round!";
+                        } else if (x === 3 && y === 2) {
+                            return "You win this round!";
+                        } else if (x === 1 && y === 2) {
+                            return "You lose.";
+                        } else if (x === 2 && y === 3) {
+                            return "You lose.";
+                        } else if (x === 3 && y === 1) {
+                            return "You lose.";
+                        } else if (x === 1 && y === 1) {
+                            return "It's a tie!";
+                        } else if (x === 2 && y === 2) {
+                            return "It's a tie!";
+                        } else if (x === 3 && y === 3) {
+                            return "It's a tie!";
+                        } else 
+                            return "Something's not right here."
+                    }
+                    function playerPlay() {
+                            x = Number(prompt("Enter"));
+                            
+                        return x;
+                    }
+                console.log(game(2 , playerPlay()));
     </script>
 </body>
 </html>
