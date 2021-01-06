@@ -4,12 +4,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Rock Paper Scissors</title>
     </head>
 
     <body>
         <script>
-            function game(x, y) {
+            
+            function playRound(x, y) {
                 if (x === "rock" && y === "scissors") {
                     return "You win this round!";
                 } else if (x === "paper" && y === "rock") {
@@ -31,9 +32,9 @@
                 } else
                     return "Something's not right here."
             }
+
             function playerPlay() {
                 playerSelection = prompt("Select: Rock, Paper, Scissors").toLowerCase();
-
                 return playerSelection;
             }
 
@@ -47,7 +48,9 @@
                     return "scissors";
                 }
             }
-            console.log(game(playerPlay(), computerPlay()));
+
+            console.log(playRound(playerPlay(), computerPlay()));
+
         </script>
     </body>
 
