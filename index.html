@@ -4,54 +4,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>Rock Paper Scissors</title>
     </head>
 
     <body>
-        <script>
-            
-            function playRound(x, y) {
-                if (x === "rock" && y === "scissors") {
-                    return "You win this round!";
-                } else if (x === "paper" && y === "rock") {
-                    return "You win this round!";
-                } else if (x === "scissors" && y === "paper") {
-                    return "You win this round!";
-                } else if (x === "rock" && y === "paper") {
-                    return "You lose.";
-                } else if (x === "paper" && y === "scissors") {
-                    return "You lose.";
-                } else if (x === "scissors" && y === "rock") {
-                    return "You lose.";
-                } else if (x === "rock" && y === "rock") {
-                    return "It's a tie!";
-                } else if (x === "paper" && y === "paper") {
-                    return "It's a tie!";
-                } else if (x === "scissors" && y === "scissors") {
-                    return "It's a tie!";
-                } else
-                    return "Something's not right here."
-            }
-
-            function playerPlay() {
-                playerSelection = prompt("Select: Rock, Paper, Scissors").toLowerCase();
-                return playerSelection;
-            }
-
-            function computerPlay() {
-                computerVar = Math.random();
-                if (computerVar < 0.333) {
-                    return "rock";
-                } else if (computerVar >= 0.333 && computerVar < 0.666) {
-                    return "paper";
-                } else {
-                    return "scissors";
-                }
-            }
-
-            console.log(playRound(playerPlay(), computerPlay()));
-
-        </script>
+        <div class="container">
+            <div class="header">
+                <h1>Welcome to Rock Paper Scissors</h1>
+                <br>
+                <h2>Score 5 to win</h2>
+            </div><!-- end of header-->
+            <div class="btn">
+                <button id="rock">Rock</button>
+            </div><!-- end of rock button -->
+            <div class="btn">
+                <button id="paper">Paper</button>
+            </div><!-- end of paper button -->
+            <div class="btn">
+                <button id="scissors">Scissors</button>
+            </div><!-- end of scissors button -->
+            <div class="output">
+                <output id="wins">Wins:</output>
+            </div><!-- end of wins output-->
+            <div class="output">
+                <output id="loses">Loses:</output>
+            </div><!-- end of loses output-->
+        </div><!-- end of container -->
+        <script src="script.js"></script>
     </body>
 
 </html>
