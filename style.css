@@ -1,8 +1,14 @@
 .btn {
     display: inline;
     padding: 10px;
+    
+
 }
 
-.output {
-    padding: 10px;
+output {
+    margin: 20px 20px;
+}
+
+.guess {
+    padding: 4px 24px;
 }

@@ -12,24 +12,39 @@
         <div class="container">
             <div class="header">
                 <h1>Welcome to Rock Paper Scissors</h1>
-                <br>
                 <h2>Score 5 to win</h2>
             </div><!-- end of header-->
+
             <div class="btn">
-                <button id="rock">Rock</button>
+                <button class="guess" id="rock">Rock</button>
             </div><!-- end of rock button -->
             <div class="btn">
-                <button id="paper">Paper</button>
+                <button class="guess" id="paper">Paper</button>
             </div><!-- end of paper button -->
             <div class="btn">
-                <button id="scissors">Scissors</button>
+                <button class="guess" id="scissors">Scissors</button>
             </div><!-- end of scissors button -->
+            <br>
+            <div class="guess">
+                <output id="comp">Computers guess: </output>
+            </div><!-- end of guess -->
+            <br>
             <div class="output">
-                <output id="wins">Wins:</output>
-            </div><!-- end of wins output-->
-            <div class="output">
-                <output id="loses">Loses:</output>
-            </div><!-- end of loses output-->
+                <output id="score">Result:</output>
+            </div><!-- end of result output-->
+            <div class="wins">
+                <output id="wins">Wins: 0</output>
+            </div><!-- end of win output -->
+            <div class="loses">
+                <output id="loses">Loses: 0</output>
+            </div><!-- end of lose output -->
+            <br>
+            <div class="endGame">
+                <output id="endGame"></output>
+            </div><!-- end of game -->
+            <div class="btn">
+                <button id="reset">Reset</button>
+            </div><!-- end of reset button -->
         </div><!-- end of container -->
         <script src="script.js"></script>
     </body>
