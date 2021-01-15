@@ -1,4 +1,4 @@
-function playRound(x, y) { // game algorithm (if you can call it that, yikes)
+function playRound(x, y) { // game
     if (x === "rock" && y === "scissors") {
         return "You win this round!";
     } else if (x === "paper" && y === "rock") {
